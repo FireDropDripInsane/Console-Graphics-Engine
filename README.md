@@ -1,4 +1,4 @@
-Console Graphics Engine (CGE) API Documentation
+#Console Graphics Engine (CGE) API Documentation
 Overview
 The Console Graphics Engine (CGE) API provides a framework for creating and rendering simple graphics using a console-based interface. It supports basic shapes like points and triangles and allows for the creation of windows where these shapes can be drawn.
 
@@ -108,59 +108,3 @@ int length: The length of the data array.
 DrawDataType type: The type of drawable objects to create (e.g., Point, Triangle).
 Returns
 A vector of pointers to Drawable objects.
-
-Getting Started
-Prerequisites
-A C++ compiler (e.g., g++, clang++)
-A terminal or console to run the program
-Installation
-Download the source code files and save them to your project directory.
-Ensure you have all the necessary header files (e.g., GraphicsEngine.h).
-Compilation
-Compile your program using a C++ compiler. For example, if you're using g++:
-
-sh
-Copy code
-g++ -o graphics_example main.cpp GraphicsEngine.cpp
-Example Usage
-cpp
-Copy code
-#include "GraphicsEngine.h"
-#include <vector>
-#include <cstdio>
-#include <chrono>
-#include <thread>
-
-using namespace CGE;
-
-int main() {
-    std::ios_base::sync_with_stdio(false);
-
-    GraphicsEngine ge = GraphicsEngine::createGraphicsEngine();
-    GraphicsEngine::Window window = GraphicsEngine::createWindow(90, 30);
-
-    int drawData[] = {
-        9, 9,
-        9, 13,
-        13, 13,
-        13, 9,
-        13, 13,
-        9, 9
-    };
-
-    int drawDataLength = sizeof(drawData) / sizeof(int);
-    std::vector<Drawable*> drawables = createDrawables(drawData, drawDataLength, DrawDataType::Triangle);
-
-    while (true) {
-        ge.draw(window, drawables);
-        std::this_thread::sleep_for(std::chrono::milliseconds(55));
-        printf("\033c");
-        fflush(stdout);
-    }
-
-    for (auto drawable : drawables) {
-        delete drawable;
-    }
-
-    return 0;
-}
