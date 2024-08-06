@@ -137,8 +137,7 @@ A vector of pointers to `Drawable` objects.
 ## Getting Started
 
 ### Prerequisites
-- A C++ compiler (e.g., g++, clang++)
-- A terminal or console to run the program
+- Visual Studio
 
 ### Getting Started
 - Coming Soon!
