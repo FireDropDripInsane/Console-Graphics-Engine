@@ -1,4 +1,5 @@
 #Console Graphics Engine (CGE) API Documentation
+
 Overview
 The Console Graphics Engine (CGE) API provides a framework for creating and rendering simple graphics using a console-based interface. It supports basic shapes like points and triangles and allows for the creation of windows where these shapes can be drawn.
 
