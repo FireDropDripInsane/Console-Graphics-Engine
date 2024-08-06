@@ -140,11 +140,5 @@ A vector of pointers to `Drawable` objects.
 - A C++ compiler (e.g., g++, clang++)
 - A terminal or console to run the program
 
-### Installation
-1. Download the source code files and save them to your project directory.
-2. Ensure you have all the necessary header files (e.g., `GraphicsEngine.h`).
-
-### Compilation
-Compile your program using a C++ compiler. For example, if you're using g++:
-```sh
-g++ -o graphics_example main.cpp GraphicsEngine.cpp
+### Getting Started
+- Coming Soon!
