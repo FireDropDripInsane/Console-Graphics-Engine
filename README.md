@@ -12,4 +12,4 @@ The current version of the engine includes
 
  To run the project download the repo as a zip, extract it and then open the sln file. (I will be changing this to premake soon.)
 
-In the current project when you run it it will show a little gui on the side and cubes in front of you. You can Use WASD to move and q and e to rotate the camera side to side. And to click on the buttons all you have to do is press down C on your keyboard. And thats all you really need to know. I will be making a documentaion on how to use it for your own projects once I have a releasable version for it.
+In the current project when you run it it will show a little gui on the side and cubes in front of you. You can Use WASD to move and q and e to rotate the camera side to side. And to click on the buttons all you have to do is press down C on your keyboard while hovering over the button. And thats all you really need to know. I will be making a documentaion on how to use it for your own projects once I have a releasable version for it.
